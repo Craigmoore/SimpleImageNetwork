@@ -1,0 +1,14 @@
+SimpleImageNetwork is a jquery ui widget. Licencing is based on its parent, the jquery ui library.
+
+Purpose
+
+To build a network of images defined by a series of nodes, where each node informs the browser of the subsequent neighbouring node.
+
+Use
+
+Double clicking index.html will show the demo of the widget - it is currently pointing at a supplied copy of a local node (javascript/json/center.js). This node is a json defined as
+
+i) 4 links to neighbouring nodes (defined as UP, RIGHT, DOWN, LEFT)
+ii) A URL pointing to an image. By default, I have created all of the images to have a 100x100 size, but there is not theoretical limit to the size. For aesthetic reasons, it is preferrable that all nodes point to images of the same size, or the widget will distort to allow the image to be seen. I could force images to the correct size, this is a future potential change.
+iii) A URL to a site, as represented by the central image.
+iv) A piece of hover text for the image.
