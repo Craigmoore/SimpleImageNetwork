@@ -23,3 +23,5 @@ To become part of the network, all you require is
 Both of these need to be hosted somewhere, with the details of the image URL correct within the JSON. Any incoming links will automatically find the image, and will be able to traverse your links to the subsequent node, or alternatively click your image to go to your website.
 
 As for getting your node integrated with someone else, that is between you and the other person to work out - they must add you to their json node.
+
+For obvious reasons, this cannot be used to access nodes on other hosts, as this would break the same origin policy.
