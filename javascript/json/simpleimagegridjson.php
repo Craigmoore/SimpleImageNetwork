@@ -5,7 +5,7 @@
 		'javascript/json/simpleimagegridjsonbottom.js',
 		'javascript/json/simpleimagegridjsonleft.js',
 		'images/stellar_gradient.png',
-    	'http://www.flashygraphics.co.uk/simpleimagenetwork/',
+    	'http://www.flashygraphics.co.uk/',
     	'Original source of the simple image network',
     	'http://www.flashygraphics.co.uk/simpleimagenetwork/signup'
     );
