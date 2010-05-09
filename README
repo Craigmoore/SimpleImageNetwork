@@ -12,3 +12,14 @@ i) 4 links to neighbouring nodes (defined as UP, RIGHT, DOWN, LEFT)
 ii) A URL pointing to an image. By default, I have created all of the images to have a 100x100 size, but there is not theoretical limit to the size. For aesthetic reasons, it is preferrable that all nodes point to images of the same size, or the widget will distort to allow the image to be seen. I could force images to the correct size, this is a future potential change.
 iii) A URL to a site, as represented by the central image.
 iv) A piece of hover text for the image.
+
+The file javascript/json/simpleimagegridjson.php is an example file of how to create the correctly structured json file in php, for future options (concerning updating links via a database for live updates)
+
+To become part of the network, all you require is
+
+1) A copy of the json file, open it up in notepad or a suitable editor and update the details as required.
+2) An image.
+
+Both of these need to be hosted somewhere, with the details of the image URL correct within the JSON. Any incoming links will automatically find the image, and will be able to traverse your links to the subsequent node, or alternatively click your image to go to your website.
+
+As for getting your node integrated with someone else, that is between you and the other person to work out - they must add you to their json node.
