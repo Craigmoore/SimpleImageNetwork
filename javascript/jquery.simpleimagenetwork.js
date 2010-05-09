@@ -26,45 +26,45 @@ $.widget( "ui.simpleimagenetwork", {
 	_create: function() {
 		var that = this;
 				
-		this.upRowDiv = $("<div class='uprow'></div>").appendTo( this.element );
-			$("<img src='" + this.options.defaultImageURL + "' />").appendTo($("<div class='leftcol'></div>")).appendTo( this.upRowDiv );
-			this.upDiv = $("<div class='midcol' id='up'></div>").appendTo( this.upRowDiv );
+		this.upRowDiv = $("<div></div>").appendTo( this.element );
+			$("<img src='" + this.options.defaultImageURL + "' />").appendTo($("<span></span>")).appendTo( this.upRowDiv );
+			this.upDiv = $("<span id='up'></span>").appendTo( this.upRowDiv );
 			this.options.upImage = $("<img src='" + this.options.defaultImageURL + "' />");
 			this.options.upImage.appendTo(this.upDiv);
 			this.options.upImage[0].onclick = function() {
 				that._setOption('centerData', that.options.upData);
 			};
-			$("<img src='" + this.options.defaultImageURL + "' />").appendTo($("<div class='rightcol'></div>")).appendTo( this.upRowDiv );
+			$("<img src='" + this.options.defaultImageURL + "' />").appendTo($("<span></span>")).appendTo( this.upRowDiv );
 			
-		this.midRowDiv = $("<div class='midrow'></div>").appendTo( this.element );
-			this.leftDiv = $("<div class='leftcol' id='left'></div>").appendTo( this.midRowDiv );
+		this.midRowDiv = $("<div></div>").appendTo( this.element );
+			this.leftDiv = $("<span id='left'></span>").appendTo( this.midRowDiv );
 			this.options.leftImage = $("<img src='" + this.options.defaultImageURL + "' />");
 			this.options.leftImage.appendTo( this.leftDiv );
 			this.options.leftImage[0].onclick = function() {
 				that._setOption('centerData', that.options.leftData);
 			}
-			this.imageDiv = $("<div class='midcol' id='image'></div>").appendTo( this.midRowDiv );
+			this.imageDiv = $("<span id='image'></span>").appendTo( this.midRowDiv );
 			this.options.centerLink = $("<a></a>");
 			this.options.centerLink[0].href=this.options.defaultLinkURL;
 			this.options.centerLink.appendTo( this.imageDiv );
-			this.options.centerImage = $("<img src='" + this.options.defaultImageURL + "' />");
+			this.options.centerImage = $("<img border='0px' src='" + this.options.defaultImageURL + "' />");
 			this.options.centerImage.appendTo( this.options.centerLink );
-			this.rightDiv = $("<div class='rightcol' id='right'></div>").appendTo( this.midRowDiv );
+			this.rightDiv = $("<span id='right'></span>").appendTo( this.midRowDiv );
 			this.options.rightImage = $("<img src='" + this.options.defaultImageURL + "' />");
 			this.options.rightImage.appendTo( this.rightDiv );
 			this.options.rightImage[0].onclick = function() {
 				that._setOption('centerData', that.options.rightData);
 			};
 
-		this.downRowDiv = $("<div class='downrow'></div>").appendTo( this.element );
-			$("<img src='" + this.options.defaultImageURL + "' />").appendTo($("<div class='leftcol'></div>")).appendTo( this.downRowDiv );
-			this.downDiv = $("<div class='midcol' id='down'></div>").appendTo( this.downRowDiv );
+		this.downRowDiv = $("<div></div>").appendTo( this.element );
+			$("<img src='" + this.options.defaultImageURL + "' />").appendTo($("<span></span>")).appendTo( this.downRowDiv );
+			this.downDiv = $("<span id='down'></span>").appendTo( this.downRowDiv );
 			this.options.downImage = $("<img src='" + this.options.defaultImageURL + "' />");
 			this.options.downImage.appendTo( this.downDiv );
 			this.options.downImage[0].onclick = function() {
 				that._setOption('centerData', that.options.downData);
 			};
-			$("<img src='" + this.options.defaultImageURL + "' />").appendTo($("<div class='rightcol'></div>")).appendTo( this.downRowDiv );
+			$("<img src='" + this.options.defaultImageURL + "' />").appendTo($("<span></span>")).appendTo( this.downRowDiv );
 	},
 	destroy: function() {
 		
